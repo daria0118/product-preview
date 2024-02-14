@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    background-color: hsl(30, 38%, 92%);
+}
+
+.container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    width: 600px;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+}
+
+.images .desk {
+    max-width: 100%;
+    display: inherit;
+    width: 300px;
+}
+
+.images .mobile {
+        display: none;
+    }
+.about {
+    width: 300px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.about .perfume {
+    text-transform: uppercase;
+    color: hsl(228, 12%, 48%);
+    letter-spacing: 3px;
+
+}
+
+.about h1 {
+    font-family: 'Fraunces', sans-serif;
+    font-size: 32px;
+    color: hsl(212, 21%, 14%);
+    line-height: 32px;
+}
+
+.about .info {
+    color: hsl(228, 12%, 48%);
+    line-height: 22px;
+}
+
+.price {
+    display: flex;
+    align-items: center;
+}
+
+
+
+.price .min {
+    font-family: 'Fraunces', sans-serif;
+    color: hsl(158, 36%, 37%);
+    font-size: 32px;
+    margin-right: 20px;
+}
+
+
+.price .max {
+    color: hsl(228, 12%, 48%);
+    text-decoration: line-through;
+}
+
+button {
+    color: hsl(0, 0%, 100%);
+    font-weight: 700;
+    background-color: hsl(158, 36%, 37%);
+    border: none;
+    border-radius: 10px;
+    font-size: 14px;
+    padding:15px;
+}
+button img {
+    margin-right: 10px;
+}
+button:hover {
+    background-color: #1A4031;
+}
+
+@media screen and (max-width: 640px) {
+    .card {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .images .desk {
+        display: none;
+    }
+
+    .images .mobile {
+        display: block;
+        max-width: 100%;
+    }
+    .container {
+        padding: 15px;
+    }
+    .about {
+        height: 380px;
+        width: 100%;
+        justify-content: space-between;
+        padding: 15px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
